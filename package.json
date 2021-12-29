@@ -1,0 +1,23 @@
+{
+  "name": "katas_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01_raton.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegomadariaga/katas_js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegomadariaga/katas_js/issues"
+  },
+  "homepage": "https://github.com/diegomadariaga/katas_js#readme",
+  "devDependencies": {
+    "eslint": "^8.5.0"
+  }
+}
