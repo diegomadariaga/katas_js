@@ -19,5 +19,8 @@
   "homepage": "https://github.com/diegomadariaga/katas_js#readme",
   "devDependencies": {
     "eslint": "^8.5.0"
+  },
+  "dependencies": {
+    "jest": "^27.5.1"
   }
 }
