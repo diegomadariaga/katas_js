@@ -6,6 +6,6 @@
 function extractDomainName(url) {
     //your code here
     //falta los casos en donde no tiene www.
-    return url.split('/')[1];
+    return url.split('//')[1].split('.')[1];
 }
 module.exports = {extractDomainName};
