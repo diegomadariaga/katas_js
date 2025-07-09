@@ -1,9 +1,31 @@
-function esPrimo(numero) {
+function esPrimo6(numero) {
     if (numero <= 1) { return false }
     for (let index = 2; index < numero; index++) {
         if (numero % index === 0) return false
     }
     return true
+}
+
+const primeCache = new Map();
+function esPrimo(numero) {
+    if (primeCache.has(numero)) {
+        return primeCache.get(numero);
+    }
+    let result = true;
+    if (numero <= 1) {
+        result = false;
+    } else {
+        // basta con probar hasta la raíz cuadrada
+        for (let i = 2; i * i <= numero; i++) {
+            if (numero % i === 0) {
+                result = false;
+                break;
+            }
+        }
+    }
+
+    primeCache.set(numero, result);
+    return result;
 }
 const esPrimo2 = n => n > 1 && [...Array(n - 2)].every((_, i) => n % (i + 2) !== 0);
 const esPrimo3 = n =>
